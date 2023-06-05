@@ -44,4 +44,10 @@ public class UserService {
         return null;
     }
 
+    public User addUser(Integer id, String name, Integer age, String email) {
+        User user = new User(id, name, age, email);
+        userList.add(user);
+        return user;
+    }
+
 }
